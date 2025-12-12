@@ -42,7 +42,7 @@ if [ "$__autossh_died" -eq 1 ]; then
     if [ -f $HOME/.ssh/id_ed25519 -o "$__autossh_force" -eq 1 ]; then
         echo "starting a new ssh-agent..."
         rm -rf ~/.cache/auto-ssh-agent.save
-        eval `ssh-agent -s`
+        eval `ssh-agent -s -t 5m`
         mkdir -p  ~/.cache
         echo '#!/bin/bash' > ~/.cache/auto-ssh-agent.save
         echo "export SSH_AGENT_PID=${SSH_AGENT_PID}" >> ~/.cache/auto-ssh-agent.save
