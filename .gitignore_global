@@ -15,7 +15,7 @@
 **/CMakeFiles/
 **/cmake_install.cmake
 # Qt
-**/moc_*_parameters
+**/moc_*.cpp_parameters*
 **/.qt/
 # Ninja
 **/build.ninja
@@ -23,3 +23,6 @@
 # binaries
 **/*.exe
 **/*.dll.a
+**/*.so
+# dropout
+**/dropout_test/
