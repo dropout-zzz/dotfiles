@@ -11,8 +11,8 @@
 #
 
 HISTFILE=~/.zsh_history
-HISTSIZE=50000
-SAVEHIST=10000
+HISTSIZE=50000000
+SAVEHIST=10000000
 
 # preference, borrowed from oh-my-zsh
 setopt extended_history       # record timestamp of command in HISTFILE
